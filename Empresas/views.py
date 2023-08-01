@@ -9,6 +9,7 @@ def Hello(Saludo):
 
 def Empresa(request):
     empresa = list(Empresas.objects.values())
+    empresa = get_object_or_404(list(Empresas))
     return JsonResponse(empresa, safe=False)
 
 def Cargos(request,CodCar):
