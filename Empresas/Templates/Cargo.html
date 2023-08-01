@@ -1,0 +1,15 @@
+<h1>Cargo</h1>
+<table>
+    <tr>
+        <th>Código Cargo</th>
+        <th>Nombre Cargo</th>
+    </tr>
+{% for cargo in cargos %}
+    <tr>
+        <th>{{cargo.CodCar}}</th>
+        <th>{{cargo.NomCar}}</th>
+        <th><button>Eliminar</button></th>
+        <th><button>Activar</button></th>
+    </tr>
+{% endfor %}
+</table>
