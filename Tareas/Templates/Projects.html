@@ -1,6 +1,10 @@
+{% extends 'Navegacion.html' %}
+
+{% block contend %}
 <h1>Proyectos</h1>
 {% for project in projects %}
 <div>
-    {{project}}
+    <a href="/tasks">{{project}}</a>
 </div>
 {% endfor %}
+{% endblock %}
